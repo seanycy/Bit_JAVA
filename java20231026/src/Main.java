@@ -2,6 +2,48 @@ import java.awt.desktop.SystemEventListener;
 
 public class Main {
     public static void main(String[] args) {
+        /*System.out.println(5/2);//两个整数输出结果不会存储小数位
+        System.out.println((float)5/2);
+        System.out.println(5/(float)2);
+        System.out.println((float) (5/2));//对整数2进行强制类型转换
+        System.out.println("====================");
+        System.out.println(10%3);
+        System.out.println(10%-3);
+        System.out.println(-10%3);
+        System.out.println(-10%-3);
+        System.out.println(11.5%2);*/
+
+        /*int a=10;
+        a+=10; //a=a+10
+        System.out.println(a);
+        long b =100;
+        int c=9;
+        //c = c +d;
+        c+=d;//特点：运算符会帮我们进行类型转换，c=(int)(c+d)
+        System.out.println(c);*/
+
+        /*int a = 10;
+        int b = ++a;//a=a+1,b=a
+        a--;
+        int c = a++;//c=a,a=a+1
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);*/
+
+        int a = 10;
+        int b = 20;
+        // 注意：在Java中 = 表示赋值，要与数学中的含义区分
+        // 在Java中 == 表示相等
+        System.out.println(a == b); // false
+        System.out.println(a != b); // true
+        System.out.println(a < b); // true
+        System.out.println(a > b); // false
+        System.out.println(a <= b); // true
+        System.out.println(a >= b); // false
+        //关系运算符结果只有true或者false，没有其他结构
+    }
+
+    public static void main7(String[] args) {
         //在C语言中没有字符串这种类型的是数据
         String str="hello";//双引号当中包含若干字符串
         System.out.println(str);
@@ -12,6 +54,8 @@ public class Main {
         System.out.println(s1);
         String s2=a+"hellox";//此加号表示拼接的意思
         System.out.println(s2);
+        //注释快捷键：ctrl+shif+/——>快注释
+        //行注释：ctrl+/
 
         String s3 =10+20+"hello";//先是数值10和数值20相加，结果为30去和字符串hello拼接
         String s4 ="hello"+10+20;//先是hello和10拼接后就是一个字符串“hello10”，然后这个字符去和20拼接
