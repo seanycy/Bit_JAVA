@@ -30,7 +30,7 @@ public class Main {
         System.out.println(b);
         System.out.println(c);*/
 
-        int a = 10;
+        /*int a = 10;
         int b = 20;
         // 注意：在Java中 = 表示赋值，要与数学中的含义区分
         // 在Java中 == 表示相等
@@ -40,7 +40,36 @@ public class Main {
         System.out.println(a > b); // false
         System.out.println(a <= b); // true
         System.out.println(a >= b); // false
-        //关系运算符结果只有true或者false，没有其他结构
+        //关系运算符结果只有true或者false，没有其他结构*/
+
+        /*int a = 1;
+        int b = 2;
+        System.out.println(a == 1 && b == 2); // 左为真 且 右为真 则结果为真
+        System.out.println(a == 1 && b > 100); // 左为真 但 右为假 则结果为假
+        System.out.println(a > 100 && b == 2); // 左为假 但 右为真 则结果为假
+        System.out.println(a > 100 && b > 100); // 左为假 且 右为假 则结果为假*/
+
+        /*int a = 1;
+        int b = 2;
+        System.out.println(a == 1 || b == 2); // 左为真 且 右为真 则结果为真
+        System.out.println(a == 1 || b > 100); // 左为真 但 右为假 则结果也为真
+        System.out.println(a > 100 || b == 2); // 左为假 但 右为真 则结果也为真
+        System.out.println(a > 100 || b > 100); // 左为假 且 右为假 则结果为假
+*/
+        /*int a = 1;
+        System.out.println(!(a == 1)); // a == 1 为true，取个非就是false
+        System.out.println(!(a != 1)); // a != 1 为false，取个非就是true
+*/
+        //短路与
+        //当表达式1为假的时候表达式2就不执行了
+        System.out.println(10>20 && 10/0==0);//并且
+        //短路或
+        //当表达式1为真的时候表达式2就不执行了
+        System.out.println(10<20 || 10/0==0);//
+
+        //此时，“&”、“|”不能表示短路，即后面内容也会执行
+        System.out.println(10 > 20 & 10 / 0 == 0); // 程序抛出异常
+        System.out.println(10 < 20 | 10 / 0 == 0); // 程序抛出异常
     }
 
     public static void main7(String[] args) {
